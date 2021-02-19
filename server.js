@@ -24,7 +24,7 @@ var server = http.createServer(function(request, response){
   if(path === '/'){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
-    response.write(`二哈`)
+    response.write(`空中转体720再完美衔接五体投地大法的范力夫和永远年轻的爸妈`)
     response.end()
   } else if(path === '/x'){
     response.statusCode = 200
