@@ -24,7 +24,15 @@ var server = http.createServer(function(request, response){
   if(path === '/'){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
-    response.write(`二哈`)
+    response.write(`
+        <!DOCTYPE html>
+        <head>
+            <link rel="stylesheet" href="/x">
+        </head>
+        <body>
+            <h1>空中转体720再完美衔接五体投地大法的范力夫和永远年轻的爸妈</h1>
+        </body>
+    `)
     response.end()
   } else if(path === '/x'){
     response.statusCode = 200
@@ -34,7 +42,7 @@ var server = http.createServer(function(request, response){
   } else {
     response.statusCode = 404
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
-    response.write(`你输入的路径不存在对应的内容`)
+    response.write(`你访问的页面不存在`)
     response.end()
   }
 
